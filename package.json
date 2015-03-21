@@ -1,0 +1,18 @@
+{
+  "name": "huskyhelp.org",
+  "private": true,
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "jshint-stylish": "latest"
+  },
+  "dependencies": {
+    "jade": "^1.9.2"
+  }
+}

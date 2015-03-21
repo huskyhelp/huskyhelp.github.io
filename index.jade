@@ -1,0 +1,107 @@
+doctype html
+html
+    head
+        link(href='dist/css/main.min.css', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+        link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
+        link(rel="stylesheet", type="text/css", href='//cdn.jsdelivr.net/jquery.slick/1.3.7/slick.css')
+        title UW Huskyhelp
+        script(src="//code.jquery.com/jquery-1.11.0.min.js")
+        script(type='text/javascript', src='dist/js/main.min.js')
+        script(type='text/javascript', src='//cdn.jsdelivr.net/jquery.slick/1.3.7/slick.min.js')
+    body#skrollr-body
+        .navbar
+            .nav-content
+                h1
+                    a(href='/') HuskyHelp
+                a(href='http://huskyhelp.tk') Old Website
+                a(href='http://huskyhelp.tk/blog') Blog
+
+        .content
+            .section#husky(data-0='background-position:50% -10px;', data-800='background-position:50% 400px;')
+                .info#header-info
+                    .container#description
+                        h2 We are ready to help
+                        p
+                            |Huskyhelp is a UW Registered Student Organization, a family of international students,
+                            |and a group of passionate people always ready to help.
+                        p.btn-row
+                            //a(href="http://forum.huskyhelp.org") Enter Our Forum
+                            a(href="http://blog.huskyhelp.org") See Our Blog
+                            // a(href="/application") Officer Application
+
+                            //a#HEL(href="/hel") HEL ENTRANCE!
+                                // .section#text
+
+            .section#upcoming
+                .container.
+                    <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AqAoAA-0CimLdEZaRG8xaU1wWGw2R0NCWmd4bC1sa1E&font=Bevan-PotanoSans&maptype=toner&lang=en&height=400' width='100%' height='400' frameborder='0'></iframe>
+            .section#lib(data-800='background-position:50% -150px;', data-2000='background-position:50% 200px;')
+                .info#middle-info
+                    .container
+                        h2 What we do
+                        p We provide all kinds of help for new international students, including:
+                        ul
+                            li Airport pick up
+                            li One-to-one mentorship during the 1st quarter
+                            li Academic help for various intro courses
+                            li Guidance for major application
+                        p.btn-row
+                            a(href="#") See more
+            .section#text
+                .container
+                    .slick
+                        .slick-item: img(src='img/slick/2_1.jpg')
+                        .slick-item: img(src='img/slick/2_2.jpg')
+                        .slick-item: img(src='img/slick/2_3.jpg')
+                        .slick-item: img(src='img/slick/2_4.jpg')
+                        .slick-item: img(src='img/slick/2_5.jpg')
+                        .slick-item: img(src='img/slick/2_6.jpg')
+                        .slick-item: img(src='img/slick/2_7.jpg')
+                        .slick-item: img(src='img/slick/2_8.jpg')
+                        .slick-item: img(src='img/slick/2_9.jpg')
+                        .slick-item: img(src='img/slick/2_10.jpg')
+                        .slick-item: img(src='img/slick/1.jpg')
+                        .slick-item: img(src='img/slick/2.jpg')
+                        .slick-item: img(src='img/slick/3.jpg')
+                        .slick-item: img(src='img/slick/4.jpg')
+                        .slick-item: img(src='img/slick/5.jpg')
+                        .slick-item: img(src='img/slick/6.jpg')
+                        .slick-item: img(src='img/slick/7.jpg')
+                        .slick-item: img(src='img/slick/8.jpg')
+
+            .section#quad(data-1600='background-position: 50% -350px', data-2850='background-position: 50% -50px')
+                .info#bottom-info
+                    .container
+                        h2 What you get
+                        p As a huskyhelp member, you can get:
+                        ul
+                            li Chances to make a lot of friends and show your talents
+                            li Special packages for Wells Fargo bank and driving school
+                            li Discounted prices for a lot of restaurants on the Ave
+                            li Chances for volunteer work and internships in the future
+                        p.btn-row
+                            a(href="#") See more
+
+            .section#footer
+                .container
+                    h2 Contact us
+                    p
+                        a(href='https://www.facebook.com/pages/UW-Husky-Help-Organization/'): i.fa.fa-facebook-square
+                        a(href='http://page.renren.com/601668142'): i.fa.fa-renren
+                        a(href='mailto:huskyh@uw.edu'): i.fa.fa-envelope
+                    p Wechat: search "huskyhelp"
+                    p 2018er QQ group: 201027080
+
+
+        script(type='text/javascript', src='dist/js/skrollr.min.js')
+        script(type='text/javascript').
+            if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+                skrollr.init({
+                    smoothScrolling: false,
+                    forceHeight: false
+                });
+            }
+            else {
+                $('.navbar').addClass('navbar-fallback')
+            }
